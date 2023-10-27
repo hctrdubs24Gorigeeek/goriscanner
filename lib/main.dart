@@ -10,6 +10,9 @@ void main() => runApp(
         ChangeNotifierProvider(create: (_) => AffilliateQrProvider()),
         ChangeNotifierProvider(create: (_) => TicketService()),
         ChangeNotifierProvider(create: (_) => BalanceService()),
+        ChangeNotifierProvider(create: (_) => SpecifyAmountProvider()),        
+        ChangeNotifierProvider(create: (_) => QrPayMenuProvider()),        
+        ChangeNotifierProvider(create: (_) => QrPayService()),                                                   
       ], child: const MyApp()),
     );
 

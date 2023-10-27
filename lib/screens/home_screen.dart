@@ -40,6 +40,13 @@ class HomeScreen extends StatelessWidget {
                 Navigator.pushNamed(context, 'affiliate-recharge-balance');
               },
               child: const Text('Affiliate recharge payment'),
+            ),
+            const SizedBox(height: 50),
+            ElevatedButton(
+              onPressed: () {                
+                Navigator.pushNamed(context, 'apecify-amount-screen');
+              },
+              child: const Text('Pay with QR - affiliate'),
             )
           ],
         ),

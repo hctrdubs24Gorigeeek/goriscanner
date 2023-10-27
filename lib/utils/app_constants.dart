@@ -4,7 +4,8 @@ class AppContants {
   static const key = 'ZoDRkPxU54rHbHQyPcpErstPUhuo9fEplAq4Dkllw0o=';
   static const iv = 'Svpx6v1IrV2sIDI8EhKilw==';
 
-  // static const String url = '10.0.2.2:8090';
+  static const String url = '10.0.2.2:8090';
   // static const String url = '192.168.1.112';
-  static const String url = '192.168.3.8:8090';
+  // static const String url = '192.168.3.8:8090';
+  // static const String url = '192.168.3.51:8090';
 }
