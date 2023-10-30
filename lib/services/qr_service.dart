@@ -64,20 +64,13 @@ class QrService extends ChangeNotifier {
       final url = Uri.http(_baseUrl, '/public/recharge-balance-afilliate-store',
           {'encryptPayQrRequest': scannedValue});
 
-      print(url);
-
       final resp =
           await http.post(url, headers: {"Content-Type": "application/json"});
 
-// * DATA TO SEND: {folio, valor, userId}.
       final responseData =
           json.decode(utf8.decode(resp.bodyBytes, allowMalformed: true));
 
-      print(responseData);
-
       payment = PaymentModel.fromMap(responseData);
-
-      print(payment);
 
       isValidating = false;
       notifyListeners();
