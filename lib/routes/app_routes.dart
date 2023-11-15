@@ -17,6 +17,7 @@ class AppRoutes {
         'pay_scanqr_screen': (_) => const PayScanqrScreen(),
         'affiliate-recharge-balance': (_) =>
             const RechargeBalanceAffiliateScreen(),
+        'validate-ticket-screen': (_) => const ValidateTicketScannerScreen(),
       },
     );
     return appRoutes;

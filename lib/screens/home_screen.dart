@@ -21,7 +21,9 @@ class HomeScreen extends StatelessWidget {
               height: 90,
             ),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'validate-ticket-screen');
+                },
                 child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 30),
                     child: const Text('Tickets'))),
@@ -43,7 +45,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 50),
             ElevatedButton(
-              onPressed: () {                
+              onPressed: () {
                 Navigator.pushNamed(context, 'apecify-amount-screen');
               },
               child: const Text('Pay with QR - affiliate'),
